@@ -1,8 +1,6 @@
-function firstCall() {
-    URL = 'https://iskarr.github.io/austindonovan.github.io/api/business.json';
-}
+const firstCall = 'https://iskarr.github.io/austindonovan.github.io/api/business.json';
 
-fetch('https://iskarr.github.io/austindonovan.github.io/api/business.json')
+fetch(firstCall)
     .then((Response) => Response.json())
     .then((jsObject) => {
         console.log(jsObject);
